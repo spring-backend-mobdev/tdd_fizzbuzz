@@ -8,9 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTest {
-
     private FizzBuzz fizzBuzz;
-
     @BeforeEach
     void setUp() {
         fizzBuzz = new FizzBuzz();
@@ -32,7 +30,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    void sholud_return_buzz_when_input_is_multiple_by_5() {
+    void should_return_buzz_when_input_is_multiple_by_5() {
         String expected = "Buzz";
         String response = fizzBuzz.convert(5);
         assertEquals(expected, response);
